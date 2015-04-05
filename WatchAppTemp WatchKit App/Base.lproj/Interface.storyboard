@@ -8,9 +8,30 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchAppTemp_WatchKit_App" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchAppTemp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <imageView width="83" height="78" alignment="center" image="flower" id="yws-2W-jSB"/>
+                        <label width="136" height="21" alignment="left" text="Timer" textAlignment="center" id="Ax8-fl-Kn2">
+                            <variation key="device=watch42mm" width="156"/>
+                        </label>
+                        <timer width="136" height="31" alignment="left" textAlignment="center" id="47J-dH-IJH">
+                            <variation key="device=watch42mm" width="155"/>
+                        </timer>
+                        <switch width="1" height="27" alignment="left" value="YES" title="Switch" id="Hh3-g0-yL8">
+                            <connections>
+                                <action selector="switchAction:" destination="AgC-eL-Hgc" id="nQx-bA-ozr"/>
+                            </connections>
+                        </switch>
+                    </items>
+                    <connections>
+                        <outlet property="imgTop" destination="yws-2W-jSB" id="ApA-EM-kEZ"/>
+                        <outlet property="lblTop" destination="Ax8-fl-Kn2" id="CtA-Q9-tXd"/>
+                        <outlet property="switch1" destination="Hh3-g0-yL8" id="r9y-ys-lzj"/>
+                        <outlet property="timer" destination="47J-dH-IJH" id="3hN-Ie-T9Y"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="277" y="304.25"/>
+            <point key="canvasLocation" x="276.35897435897436" y="312.53846153846155"/>
         </scene>
     </scenes>
 </document>

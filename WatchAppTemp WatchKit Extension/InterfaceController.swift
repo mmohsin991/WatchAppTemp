@@ -12,8 +12,16 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet weak var lblTop: WKInterfaceLabel!
+    @IBOutlet weak var timer: WKInterfaceTimer!
+    @IBOutlet weak var switch1: WKInterfaceSwitch!
+    @IBOutlet weak var imgTop: WKInterfaceImage!
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+    //    self.imgTop.setImage(UIImage(named: "flowerE"))
+
+    
         
         // Configure interface objects here.
     }
@@ -26,6 +34,15 @@ class InterfaceController: WKInterfaceController {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+
+    @IBAction func switchAction(value: Bool) {
+        println(value)
+
+        value == true ? println("On") : println("Off")
+
+        self.imgTop.setImage(UIImage(named: "flower2E"))
+        
     }
 
 }

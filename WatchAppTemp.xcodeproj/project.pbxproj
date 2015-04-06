@@ -20,6 +20,7 @@
 		422E8D911AD0628600F3199F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 422E8D901AD0628600F3199F /* Images.xcassets */; };
 		422E8D941AD0628600F3199F /* WatchAppTemp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 422E8D7C1AD0628600F3199F /* WatchAppTemp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		425C27A71AD192CF00DAD02A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422E8D5A1AD0621700F3199F /* ViewController.swift */; };
+		4282F5341AD2B679005B2F6B /* timerIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4282F5331AD2B679005B2F6B /* timerIC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		422E8D8C1AD0628600F3199F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		422E8D8E1AD0628600F3199F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		422E8D901AD0628600F3199F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4282F5331AD2B679005B2F6B /* timerIC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = timerIC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				422E8D801AD0628600F3199F /* InterfaceController.swift */,
+				4282F5331AD2B679005B2F6B /* timerIC.swift */,
 				422E8D821AD0628600F3199F /* Images.xcassets */,
 				422E8D7E1AD0628600F3199F /* Supporting Files */,
 			);
@@ -380,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4282F5341AD2B679005B2F6B /* timerIC.swift in Sources */,
 				425C27A71AD192CF00DAD02A /* ViewController.swift in Sources */,
 				422E8D811AD0628600F3199F /* InterfaceController.swift in Sources */,
 			);

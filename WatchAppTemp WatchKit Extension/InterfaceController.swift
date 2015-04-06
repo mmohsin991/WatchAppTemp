@@ -12,15 +12,18 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
-    @IBOutlet weak var lblTop: WKInterfaceLabel!
-    @IBOutlet weak var timer: WKInterfaceTimer!
-    @IBOutlet weak var switch1: WKInterfaceSwitch!
+
     @IBOutlet weak var imgTop: WKInterfaceImage!
+    
+    
+    
+    var imageNumber = 1;
+    var arrImages : [String] = [ "flower2", "flower"]
+    
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
     //    self.imgTop.setImage(UIImage(named: "flowerE"))
-
     
         
         // Configure interface objects here.
@@ -36,13 +39,30 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
-    @IBAction func switchAction(value: Bool) {
-        println(value)
 
-        value == true ? println("On") : println("Off")
+    @IBAction func changeImage() {
+        
 
-        self.imgTop.setImage(UIImage(named: "flower2E"))
+        if self.imageNumber == 1 {
+          //  WKInterfaceDevice.currentDevice().removeAllCachedImages()
+            self.imgTop.setImageNamed(self.arrImages[0])
+            self.imageNumber = 2
+        }
+        else if  self.imageNumber == 2 {
+          //  WKInterfaceDevice.currentDevice().removeAllCachedImages()
+            self.imgTop.setImageNamed(self.arrImages[1])
+            self.imageNumber = 1
+
+        }
+        
         
     }
+    
+    @IBAction func addMenuItem() {
+        println("Mohsin")
+    }
+    
+    
 
+    
 }
